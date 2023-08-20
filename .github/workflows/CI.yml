@@ -1,4 +1,4 @@
-name: WR1200JS
+name: K2P-USB
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: WR1200JS
+        TNAME: K2P-USB
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

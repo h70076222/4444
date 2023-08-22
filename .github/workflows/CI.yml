@@ -1,4 +1,4 @@
-name: K2P-USB
+name: WR330
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: K2P-USB
+        TNAME: WR330
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

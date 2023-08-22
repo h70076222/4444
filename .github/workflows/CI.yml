@@ -1,4 +1,4 @@
-name: WR330
+name: WR1200JS
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: WR330
+        TNAME: WR1200JS
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

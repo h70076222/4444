@@ -1,4 +1,4 @@
-name: XY-C1
+name: NEWIFI
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: XY-C1
+        TNAME: NEWIFI
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

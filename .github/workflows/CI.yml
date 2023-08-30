@@ -1,4 +1,4 @@
-name: MI-R3G
+name: XY-C1
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: MI-R3G
+        TNAME: XY-C1
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

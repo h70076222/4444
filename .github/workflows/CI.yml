@@ -1,4 +1,4 @@
-name: BELL-A040WQ
+name: BELL-A040WQ WJ1200JS
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: BELL-A040WQ
+        TNAME: BELL-A040WQ WJ1200JS
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

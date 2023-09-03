@@ -31,7 +31,7 @@ jobs:
     - name: Clone source code
       run: |
         git clone --depth=1 https://github.com/h70076222/padavan.git /opt/padavan
-        cd /opt/padavan/toolchain-mipsel
+        cd /opt/padavan/toolchain
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     

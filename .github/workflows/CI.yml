@@ -92,5 +92,3 @@ jobs:
       with:
         name: Padavan-packages
         path: /opt/images
-        name: Padavan-packages
-        path: /opt/images

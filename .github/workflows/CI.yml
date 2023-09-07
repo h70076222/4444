@@ -1,4 +1,4 @@
-name: WR1200JS
+name: XY-C1
 on: 
   release:
     types: [published]
@@ -37,7 +37,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: WR1200JS
+        TNAME: XY-C1
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

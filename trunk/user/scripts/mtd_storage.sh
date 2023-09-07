@@ -3,7 +3,7 @@
 result=0
 mtd_part_name="Storage"
 mtd_part_dev="/dev/mtdblock5"
-mtd_part_size=65536
+mtd_part_size=6291456
 dir_storage="/etc/storage"
 slk="/tmp/.storage_locked"
 tmp="/tmp/storage.tar"

@@ -1,4 +1,4 @@
-name: K2P-USB
+name: WR1200JS
 on: 
   release:
     types: [published]
@@ -30,14 +30,14 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/h70076222/4444.git /opt/padavan
+        git clone --depth=1 https://github.com/h70076222/padavan.git /opt/padavan
         cd /opt/padavan/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     
     - name: Build Firmware
       env:
-        TNAME: K2P-USB
+        TNAME: WR1200JS
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then

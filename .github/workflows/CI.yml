@@ -30,7 +30,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/h70076222/padavan.git /opt/padavan
+        git clone --depth=1 https://github.com/h70076222/padavan-4.4.git /opt/padavan
         cd /opt/padavan/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
